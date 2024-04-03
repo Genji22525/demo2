@@ -10,8 +10,8 @@ public class Bibliotecario extends Funcionario {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    private int totalLivrosBiblioteca = 200; // Total de livros na biblioteca
-    private int livrosAlugados = 25; // Livros já alugados inicialmente
+    private int totalLivrosBiblioteca; // Total de livros na biblioteca
+    private int livrosAlugados; // Livros já alugados inicialmente
 
     public Bibliotecario(String nome, String cpf, long id, float salario, long id1, int totalLivrosBiblioteca, int livrosAlugados) {
         super(nome, cpf, id, salario);
